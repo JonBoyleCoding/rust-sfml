@@ -9,6 +9,7 @@ license = "zlib-acknowledgement"
 keywords = ["sfml", "multimedia", "game"]
 readme = "README.md"
 edition = "2018"
+build = "build.rs"
 
 [features]
 default = ["graphics", "audio"]
@@ -47,6 +48,9 @@ optional = true
 
 [dev-dependencies]
 rand = "0.3"
+
+[build-dependencies]
+build_tools = { git = "https://gitlab.com/FalconProgrammer/rust-build-tools.git" , rev = "fbe01d278b55529a895b1d3757ac45ae17dd6d7d" }
 
 [lib]
 name = "sfml"
